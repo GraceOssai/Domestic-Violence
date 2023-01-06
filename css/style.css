@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  color: var(--font-color);
+}
+
+body{
+  background-color: rgba(0, 0, 0, 0.955);
+}
+
+:root{
+  --big-font:4rem;
+  --h2-font: 3rem;
+  --general-font:2rem;
+  --small-font:1.5rem;
+  --font-color: white;
+  --btn-color: black;
+  --btn-size: 1rem;
+}
+
+/* Hero section */
+header{
+  height: 100vh;
+  width: 100%;
+ background: url("../asset/img/hold\ hand.jpg");
+ background-size: cover;
+  background-position: top;
+}
+
+.overlay{
+  padding: 20px 5%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.666);
+}
+
+.image-div{
+  flex: 1;
+}
+
+.image-div img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.bar{
+  flex: 1;
+}
+.overlay nav{
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay ul{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.sub-header h1{
+  font-size: var(--big-font);
+  font-family: Righteous;
+  font-weight: 600;
+}
+
+.sub-header h1 span{
+  color: red;
+}
+
+.info{
+  width: 500px;
+}
+
+.info p{
+  color: rgba(240, 248, 255, 0.268);
+  line-height: 1.7;
+}
+
+.info p span{
+  color: red;
+}
+
+.info button{
+  padding: 8px 30px;
+  margin-top: 30px;
+  background: none;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(245, 245, 245, 0.275);
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/* Different cases section */
+.different_cases{
+  padding: 50px 5%;
+}
+
+.different_cases h2{
+  font-size: var(--h2-font);
+  color: aliceblue;
+}
+.card-images{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+
+.bg-image{
+  height: 300px;
+  width: 390px;
+  object-fit: cover;
+  background-position: left;
+  position: relative;
+}
+
+.bg-image div{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.first{
+  background: url("../asset/img/rape-image.jpg");
+}
+
+.second{
+  background: url("../asset/img/blackwomancrying.jpg");
+}
+
+.third{
+  background: url("../asset/img/dark-shadow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-position: center;
+}
+
+.fourth{
+  background: url("../asset/img/cry\ woman.jpg");
+}
+
+.fifth{
+  background: url("../asset/img/punch.jpg");
+  background-position: left;
+}
+
+.sixth{
+  background: url("../asset/img/sealed\ lips.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-position: center;
+}
+
+.card-images p{
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.card-images a button{
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  color: red;
+  background-color: transparent;
+}
+
+
+/* about us section */
+.about-us p{
+  padding: 50px 5%;
+  text-align: center;
+  color: aliceblue;
+  line-height: 2;
+  font-family: righteous;
+  font-weight: 100;
+}
+
+
+/* FOOTER SECTION */
+
+
+footer{
+  padding: 30px 20%;
+}
+
+.footer-div p{
+  font-size: .8rem;
+  text-align: center;
+}
+
+.footer-div span{
+  color: white;
+  height: 10px;
+}
+
+@media(max-width:890px){
+  .sub-header h1{
+    font-size: var(--h2-font);
+    font-family: Righteous;
+    font-weight: 600;
+  }
+
+  .different_cases h2{
+    font-size: var(--h2-font);
+    color: aliceblue;
+    text-align: center;
+  } 
+
+  .card-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+
+@media(max-width:530px){
+  
+  .sub-header h1{
+    font-size: var(--small-font);
+  }
+  header{
+    background-position: center;
+  }
+  
+  .overlay{
+    padding: 20px 5%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.666);
+  }
+
+  .info{
+    width: 300px;
+  }
+
+  .info p{
+    font-size: .8rem;
+  }
+
+  .bg-image{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .different_cases h2{
+    font-size: var(--small-font);
+  }
+
+  .bg-image p{
+    font-size: .8rem;
+  }
+
+  .bg-image button{
+    padding: 3px 5px;
+    font-size: .8rem;
+  }
+
+  .about-us p{
+    font-size: .8rem;
+  }
+}
