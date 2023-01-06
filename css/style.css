@@ -176,6 +176,7 @@ header{
   border-radius: 4px;
   color: red;
   background-color: transparent;
+  cursor: pointer;
 }
 
 
