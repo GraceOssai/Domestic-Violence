@@ -41,6 +41,12 @@ header{
   flex: 1;
 }
 
+.bi-list{
+  font-size: 1.5rem;
+  color: white;
+  display: none;
+}
+
 .overlay nav{
   padding-bottom: 80px;
   display: flex;
