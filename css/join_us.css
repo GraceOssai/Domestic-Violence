@@ -41,7 +41,7 @@ header{
 .bi-list{
   font-size: 1.5rem;
   color: white;
-  display: none;
+  /* display: none; */
 }
 
 .overlay nav{
