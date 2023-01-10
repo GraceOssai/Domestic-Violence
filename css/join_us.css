@@ -24,6 +24,15 @@ header{
   background-color: rgba(0, 0, 0, 0.666);
 }
 
+
+.overlay nav{
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .image-div{
   flex: 1;
 }
@@ -44,12 +53,6 @@ header{
   /* display: none; */
 }
 
-.overlay nav{
-  padding-bottom: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .overlay ul{
   flex: 1;
@@ -238,6 +241,17 @@ footer{
     text-align: start;
     line-height: 1;
     color: white;
+  }
+
+
+  .overlay nav{
+    padding-bottom: 80px;
+    display: flex;
+    column-gap: 200px;
+  }
+
+  .overlay ul{
+    display: none;
   }
 
    /* JOIN OUR TEAM SECTION */
