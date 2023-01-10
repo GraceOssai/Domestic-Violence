@@ -127,7 +127,7 @@ header{
 
 .bg-image{
   height: 300px;
-  width: 390px;
+  width: 350px;
   object-fit: cover;
   background-position: left;
   position: relative;
@@ -250,6 +250,13 @@ footer{
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.666);
+  }
+
+  .overlay ul{
+    /* flex: 1; */
+    display: none;
+    /* justify-content: space-between;
+    font-weight: 600; */
   }
 
   .info{
