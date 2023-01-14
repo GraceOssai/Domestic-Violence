@@ -39,22 +39,19 @@ header{
 
 .bar{
   flex: 1;
-}
-
-.bi-list{
   font-size: 1.5rem;
   color: white;
-  /* display: none; */
+  display: none;
 }
 
-.overlay nav{
+.nav-bar{
   padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.overlay ul{
+.nav-list{
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -255,14 +252,38 @@ footer{
 
 @media(max-width:750px){
 
-  .overlay nav{
+  .nav-bar{
     padding-bottom: 80px;
     display: flex;
     column-gap: 200px;
   }
 
-  .overlay ul{
-    display: none;
+  .bar{
+    display: block;
+  }
+
+
+  .bar.active{
+    opacity: 0;
+  }
+
+  .nav-list{
+    position: fixed;
+    left: -100%;
+    top: 10px;
+    gap: 0;
+    width: 100%;
+    transition: 0.3s;
+    flex-direction: column;
+  }
+
+
+  .nav-list.active{
+    left: 70%;
+  }
+
+  .nav-items{
+    margin: 16px 0;
   }
 
 
