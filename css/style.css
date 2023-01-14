@@ -181,16 +181,12 @@ header{
   margin-bottom: 10px;
 }
 
-.card-images a button{
-  cursor: pointer;
+.read-link{
+  color: white;
+  background-color: red;
   padding: 5px 10px;
-  border: 1px solid gray;
   border-radius: 4px;
-  color: red;
-  background-color: transparent;
-  cursor: pointer;
 }
-
 
 /* about us section */
 .about-us p{
